@@ -1,0 +1,100 @@
+/*Basic browser reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*IE img inside of link fix*/
+a img{
+	border: none;
+}
+
+body{
+	background-color: #ededed;
+	font-family: Verdana;
+	font: Verdana;
+}
+
+/*COLORS AND TYPOGRAPHY*/
+
+.red{
+		color: #e93a35;
+}
+
+.caps{
+	text-transform: uppercase;
+}
+
+.name{
+	font: 2em Verdana;
+}
+
+.title{
+	margin-top: 10px;
+	font: 1.2em Verdana;
+}
+
+.location{
+	font: .75em Verdana;
+	letter-spacing: .25em;
+	margin-top: 5px;
+}
+
+.dates{
+	font: bold .8em Verdana;
+	margin-top: 5px;
+	
+}
+
+.bio{
+	font: .75em Verdana;
+	margin-top: 10px;
+}
+
+
+/*LAYOUT*/
+
+#wrapper{
+	width: 1024px;
+	margin: 0px auto;
+}
+
+#headerimg{
+	margin-bottom: 50px;	
+}
+
+.left{
+	float: left;
+	width: 682.6px;
+}
+
+.speaker{
+	/*height: 200px;*/
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.propic{
+	float: left;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.smallbio{
+	margin-left: 15px;
+	margin-right: 15px;
+
+}
+
+
+
+
+
+.expanded{
+	visibility: hidden;
+}
+
+.right{
+	float: right;
+	width: 341.3px;
+}
