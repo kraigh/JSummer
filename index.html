@@ -8,12 +8,14 @@ J.NET /Summer
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+	<script src="jquery.localscroll.js" type="text/javascript"></script> 
+	<script src="jquery.scrollTo.js" type="text/javascript"></script>
 	<script type="text/javascript">
-	function toggleDiv(divId) {
-	   $("#"+divId).toggle();
-	}
-	</script>
+		$(document).ready(function() {
+   		$('#wrapper').localScroll({duration:800});
+		});
+		</script>
 
 </head>
 
@@ -21,7 +23,7 @@ J.NET /Summer
 <div id="wrapper">
 <div id="headerimg">
 <a name="top"></a>
-	<img src="images/summerbannerCOMP1.gif">
+	<img src="images/SummerBannerCOMP1.gif">
 </div>
 <div class="grid" id="guest">
 		<h1 class="name red caps">Guest Speakers</h1>
