@@ -8,9 +8,11 @@ J.NET /Summer
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
-	<script src="jquery.localscroll.js" type="text/javascript"></script> 
-	<script src="jquery.scrollTo.js" type="text/javascript"></script>
+	<link href="lightbox.css" rel="stylesheet" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.localscroll.js" type="text/javascript"></script> 
+	<script src="js/jquery.scrollTo.js" type="text/javascript"></script>
+	<script src="js/lightbox.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
    		$('#wrapper').localScroll({duration:800});
@@ -22,65 +24,19 @@ J.NET /Summer
 <body>
 <div id="wrapper">
 <div id="headerimg">
-<!--<a name="top"></a>-->
+<a name="top"></a>
 
 	
-<!--	<div style="text-align:center; width:1024px; margin-left:auto; margin-right:auto;">
-	<img id="Image-Maps_2201206141636506" src="images/SummerBannerCOMP1.gif" usemap="#Image-Maps_2201206141636506" border="0" width="1024" height="172" alt="Summer Schedule" />
-	<map id="_Image-Maps_2201206141636506" name="Image-Maps_2201206141636506">
-	<area shape="rect" coords="437,9,629,35" href="images/7_1.jpg" alt="7-1" title="7-1"    />
-	<area shape="rect" coords="438,41,630,67" href="images/7_8.jpg" alt="7-8" title="7-8"    />
-	<area shape="rect" coords="439,72,631,98" href="images/7_15.jpg" alt="7-15" title="7-15"    />
-	<area shape="rect" coords="439,104,631,130" href="images/7_22.jpg" alt="7-22" title="7-22"    />
-	<area shape="rect" coords="439,136,631,162" href="images/7_29.jpg" alt="7-29" title="7-29"    />
-	<area shape="rect" coords="654,9,846,35" href="8_5.jpg" alt="8-5" title="8-5"    />
-	<area shape="rect" coords="655,41,847,67" href="8_12.jpg" alt="8/12" title="8/12"    />
-	<area shape="rect" coords="655,72,847,98" href="8_19.jpg" alt="8-9" title="8-9"    />
-	<area shape="rect" coords="655,104,847,130" href="8_26.jpg" alt="8-26" title="8-26"    />
-	</map>
-	</div>-->
-	
-	<style type="text/css">
-		dl.image_map {display:block; width:1024px; height:172px; background:url(images/SummerBannerCOMP1.gif); position:relative; margin:2px auto 2px auto;}
-		a.LINK0 {left:437px; top:9px; background:transparent;}
-		a.LINK0 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK0:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK1 {left:438px; top:41px; background:transparent;}
-		a.LINK1 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK1:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK2 {left:439px; top:72px; background:transparent;}
-		a.LINK2 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK2:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK3 {left:439px; top:104px; background:transparent;}
-		a.LINK3 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK3:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK4 {left:439px; top:136px; background:transparent;}
-		a.LINK4 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK4:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK5 {left:654px; top:9px; background:transparent;}
-		a.LINK5 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK5:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK6 {left:655px; top:41px; background:transparent;}
-		a.LINK6 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK6:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK7 {left:655px; top:72px; background:transparent;}
-		a.LINK7 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK7:hover  {background:transparent; border:1px dashed black; color:black;}
-		a.LINK8 {left:655px; top:104px; background:transparent;}
-		a.LINK8 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
-		a.LINK8:hover  {background:transparent; border:1px dashed black; color:black;}
-	</style>
-	
 	<dl class="image_map">
-		<dd><a class="LINK0" title="7-1" href="images/7_1.jpg"></a></dd>
-		<dd><a class="LINK1" title="7-8" href="images/7_8.jpg"></a></dd>
-		<dd><a class="LINK2" title="7-15" href="images/7_15.jpg"></a></dd>
-		<dd><a class="LINK3" title="7-22" href="images/7_22.jpg"></a></dd>
-		<dd><a class="LINK4" title="7-29" href="images/7_29.jpg"></a></dd>
-		<dd><a class="LINK5" title="8-5" href="8_5.jpg"></a></dd>
-		<dd><a class="LINK6" title="8/12" href="8_12.jpg"></a></dd>
-		<dd><a class="LINK7" title="8-9" href="8_19.jpg"></a></dd>
-		<dd><a class="LINK8" title="8-26" href="8_26.jpg"></a></dd>
+		<dd><a class="LINK0" alt="7-1" href="images/7_1.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK1" alt="7-8" href="images/7_8.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK2" alt="7-15" href="images/7_15.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK3" alt="7-22" href="images/7_22.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK4" alt="7-29" href="images/7_29.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK5" alt="8-5" href="images/8_5.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK6" alt="8/12" href="images/8_12.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK7" alt="8-9" href="images/8_19.jpg" rel="lightbox"></a></dd>
+		<dd><a class="LINK8" alt="8-26" href="images/8_26.jpg" rel="lightbox"></a></dd>
 	</dl>
 	
 	<div id="sched">
@@ -88,17 +44,77 @@ J.NET /Summer
 	</div> <!--/#sched-->
 </div> <!--/#headerimg-->
 <div class="grid" id="guest">
-		<img src="images/Summer_button_guest.gif">
-		<a href="#C1"><img src="images/GuestSpeaker1_bryanchapell.jpg" class="gridimg"></a>
-		<a href="#C2"><img src="images/GuestSpeaker2_bobkauflin.jpg" class="gridimg"></a>
-		<a href="#C3"><img src="images/GuestSpeaker3_yancyarrington.jpg" class="gridimg"></a>
+		<img src="images/Summer_button_guest.gif" class="button">
+		<a href="#G1"><img src="images/GuestSpeaker1_bryanchapell.jpg" class="gridimg"></a>
+		<a href="#G2"><img src="images/GuestSpeaker2_bobkauflin.jpg" class="gridimg"></a>
+		<a href="#G3"><img src="images/GuestSpeaker3_yancyarrington.jpg" class="gridimg"></a>
 	
 	
 </div> <!--/.grid#guest-->
 
 
 <div class="grid" id="campus">
-	<img src="images/Summer_button_connect.gif">
+	<img src="images/Summer_button_connect.gif" class="button">
+	<div class="twitter">
+	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js" class="twitter"></script>
+	<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 5,
+	  interval: 30000,
+	  width: 396,
+	  height: 200,
+	  theme: {
+	    shell: {
+	      background: '#6E6E6E',
+	      color: '#ffffff'
+	    },
+	    tweets: {
+	      background: '#ffffff',
+	      color: '#000000',
+	      links: '#e93a35'
+	    }
+	  },
+	  features: {
+	    scrollbar: true,
+	    loop: false,
+	    live: true,
+	    behavior: 'all'
+	  }
+	}).render().setUser('TheJourneySTL').start();
+	</script>
+	</div> <!--/.twitter-->
+	<div class="twitter notfirst">
+	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 5,
+	  interval: 30000,
+	  width: 396,
+	  height: 200,
+	  theme: {
+	    shell: {
+	      background: '#6E6E6E',
+	      color: '#ffffff'
+	    },
+	    tweets: {
+	      background: '#ffffff',
+	      color: '#000000',
+	      links: '#e93a35'
+	    }
+	  },
+	  features: {
+	    scrollbar: true,
+	    loop: false,
+	    live: true,
+	    behavior: 'all'
+	  }
+	}).render().setUser('darrinpatrick').start();
+	</script>
+	</div> <!--/#twitter-->
 	
 
 </div>  <!--/.grid#campus-->
@@ -108,7 +124,7 @@ J.NET /Summer
 
 	<div class="speaker" id="Chapell">
 	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
+<!--		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">-->
 	
 		<div class="smallbio">
 			<a name="G1"></a>
@@ -116,7 +132,7 @@ J.NET /Summer
 			<h2 class="title">Covenant Seminary President</h2>
 			<h2 class="location caps">Ballwin, Missouri</h2>
 			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
-			<p class="biotext">Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. </p>
+			<p class="biotext">Dr. Bryan Chapell is the Chancellor at Covenant Theological Seminary in St. Louis. He is the author of many articles and numerous books, including Praying Backwards: Transform Your Prayer Life by Beginning in Jesus’ Name, Holiness by Grace, I’ll Love You Anyway &#38; Always, Each for the Other, The Wonder of It All, and Christ-Centered Preaching.</p>
 			<a href="#top">Back To Top</a>
 		</div> <!--/.smallbio-->	
 	</div> <!--/.speaker-->
@@ -125,26 +141,26 @@ J.NET /Summer
 	
 	<div class="speaker" id="Chapell">
 	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
+<!--		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">-->
 	
 		<div class="smallbio">
 			<a name="G2"></a>
-			<h1 class="name red caps">Dr. Bryan Chapell</h1>
+			<h1 class="name red caps">Bob Kauflin</h1>
 			<h2 class="title">Covenant Seminary President</h2>
 			<h2 class="location caps">Ballwin, Missouri</h2>
 			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
-			<p class="biotext">Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. </p>
+			<p class="biotext">Dr. Bryan Chapell is the Chancellor at Covenant Theological Seminary in St. Louis. He is the author of many articles and numerous books, including Praying Backwards: Transform Your Prayer Life by Beginning in Jesus’ Name, Holiness by Grace, I’ll Love You Anyway &#38; Always, Each for the Other, The Wonder of It All, and Christ-Centered Preaching.</p>
 			<a href="#top">Back To Top</a>
 		</div> <!--/.smallbio-->	
 	</div> <!--/.speaker-->
 	
 	<div class="speaker" id="Chapell">
 	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
+<!--		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">-->
 	
 		<div class="smallbio">
 			<a name="G3"></a>
-			<h1 class="name red caps">Dr. Bryan Chapell</h1>
+			<h1 class="name red caps">Yancey Arrington</h1>
 			<h2 class="title">Covenant Seminary President</h2>
 			<h2 class="location caps">Ballwin, Missouri</h2>
 			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
@@ -154,85 +170,7 @@ J.NET /Summer
 	</div> <!--/.speaker-->
 	
 	
-	<div class="speaker" id="Chapell">
-	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
-	
-		<div class="smallbio">
-			<a name="G4"></a>
-			<h1 class="name red caps">Dr. Bryan Chapell</h1>
-			<h2 class="title">Covenant Seminary President</h2>
-			<h2 class="location caps">Ballwin, Missouri</h2>
-			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
-			<p class="biotext">Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. </p>
-			<a href="#top">Back To Top</a>
-		</div> <!--/.smallbio-->	
-	</div> <!--/.speaker-->
-	
-	
-	<div class="speaker" id="Chapell">
-	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
-	
-		<div class="smallbio">
-			<a name="C1"></a>
-			<h1 class="name red caps">Dr. Bryan Chapell</h1>
-			<h2 class="title">Covenant Seminary President</h2>
-			<h2 class="location caps">Ballwin, Missouri</h2>
-			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
-			<p class="biotext">Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. </p>
-			<a href="#top">Back To Top</a>
-		</div> <!--/.smallbio-->	
-	</div> <!--/.speaker-->
-	
-	
-	<div class="speaker" id="Chapell">
-	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
-	
-		<div class="smallbio">
-			<a name="C2"></a>
-			<h1 class="name red caps">Dr. Bryan Chapell</h1>
-			<h2 class="title">Covenant Seminary President</h2>
-			<h2 class="location caps">Ballwin, Missouri</h2>
-			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
-			<p class="biotext">Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. </p>
-			<a href="#top">Back To Top</a>
-		</div> <!--/.smallbio-->	
-	</div> <!--/.speaker-->
-	
-	
-	<div class="speaker" id="Chapell">
-	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
-	
-		<div class="smallbio">
-			<a name="C3"></a>
-			<h1 class="name red caps">Dr. Bryan Chapell</h1>
-			<h2 class="title">Covenant Seminary President</h2>
-			<h2 class="location caps">Ballwin, Missouri</h2>
-			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
-			<p class="biotext">Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. </p>
-			<a href="#top">Back To Top</a>
-		</div> <!--/.smallbio-->	
-	</div> <!--/.speaker-->
-	
-	
-	<div class="speaker" id="Chapell">
-	
-		<img src="images/BIOpicCOMP1Smaller.gif" class="propic">
-	
-		<div class="smallbio">
-			<a name="C4"></a>
-			<h1 class="name red caps">Dr. Bryan Chapell</h1>
-			<h2 class="title">Covenant Seminary President</h2>
-			<h2 class="location caps">Ballwin, Missouri</h2>
-			<h2 class="dates red caps">July 1 &#38; 2 Tower Grove</h2>
-			<p class="biotext">Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. Some brief bio text. A little about what he does, where he lives, etc. A few sentences. </p>
-			<a href="#top">Back To Top</a>
-		</div> <!--/.smallbio-->	
-	</div> <!--/.speaker-->
-	
+		
 	
 	
 	
@@ -240,7 +178,7 @@ J.NET /Summer
 
 <div class="right">
 
-	<img src="images/samplead.gif" class="ad">
+<!--	<img src="images/samplead.gif" class="ad">-->
 
 
 

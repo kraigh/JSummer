@@ -63,6 +63,8 @@ body{
 	margin-bottom: 50px;	
 }
 
+
+
 #sched{
 	position: absolute;
 	top: 13px;
@@ -79,10 +81,45 @@ body{
 	list-style: none;
 }
 
+/*         #### IMAGE MAP ####        */
+
+dl.image_map {display:block; width:1024px; height:172px; background:url(images/SummerBannerCOMP1.gif); position:relative; margin:2px auto 2px auto;}
+a.LINK0 {left:437px; top:8px; background:transparent;}
+a.LINK0 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK0:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK1 {left:437px; top:40px; background:transparent;}
+a.LINK1 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK1:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK2 {left:437px; top:71px; background:transparent;}
+a.LINK2 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK2:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK3 {left:437px; top:103px; background:transparent;}
+a.LINK3 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK3:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK4 {left:437px; top:135px; background:transparent;}
+a.LINK4 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK4:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK5 {left:654px; top:8px; background:transparent;}
+a.LINK5 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK5:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK6 {left:654px; top:40px; background:transparent;}
+a.LINK6 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK6:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK7 {left:654px; top:71px; background:transparent;}
+a.LINK7 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK7:hover  {background:transparent; border:1px dashed black; color:black;}
+a.LINK8 {left:654px; top:103px; background:transparent;}
+a.LINK8 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
+a.LINK8:hover  {background:transparent; border:1px dashed black; color:black;}
+
 .grid{
 	text-align: center;
 	width: 512px;
 	margin-bottom: 100px;
+}
+
+.button{
+	margin-bottom: 20px;
 }
 div#guest{
 	float: left;
@@ -91,16 +128,28 @@ div#guest{
 
 div#campus{
 	float: right;
+	text-align: center;
 }
 
+.twitter{
+	width: 396px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.twitter.notfirst{
+	margin-top: 30px;
+}
 .left{
 	float: left;
 	width: 682.6px;
 }
 
 .gridimg{
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .speaker{
@@ -120,7 +169,7 @@ div#campus{
 }
 
 .smallbio{
-	margin-left: 230px;
+	margin-left: 30px;
 	margin-right: 15px;
 
 }
@@ -137,3 +186,5 @@ div#campus{
 	float: right;
 	width: 341.3px;
 }
+
+
