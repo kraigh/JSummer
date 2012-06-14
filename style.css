@@ -63,6 +63,22 @@ body{
 	margin-bottom: 50px;	
 }
 
+#sched{
+	position: absolute;
+	top: 13px;
+	left: 450px;
+	height: 172px;
+
+}
+
+#sched ul{
+
+}
+
+#sched li{
+	list-style: none;
+}
+
 .grid{
 	text-align: center;
 	width: 512px;
