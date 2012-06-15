@@ -47,8 +47,17 @@ body{
 }
 
 .biotext{
-	font: .75em Verdana;
-	margin-top: 10px;
+	font: .85em/1.5em Verdana;
+	margin-top: 20px;
+}
+
+.biotext a{
+	color: #e93a35;
+}
+
+.smallbio a.btt{
+	font-size: .75em;
+	color: #f5950f;
 }
 
 
@@ -144,12 +153,13 @@ div#campus{
 }
 .left{
 	float: left;
-	width: 682.6px;
+	width: 512px;
+	clear: both;
 }
 
 .gridimg{
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 .speaker{
@@ -171,8 +181,14 @@ div#campus{
 .smallbio{
 	margin-left: 30px;
 	margin-right: 15px;
+	margin-bottom: 80px;
 
 }
+
+.biotext{
+	margin-bottom: 20px;	
+}
+
 
 
 
@@ -184,7 +200,9 @@ div#campus{
 
 .right{
 	float: right;
-	width: 341.3px;
+	width: 512px;
 }
+
+
 
 
