@@ -68,6 +68,10 @@ body{
 	margin: 0px auto;
 }
 
+#logo{
+	padding-left: 25px;
+}
+
 #headerimg{
 	margin-top: 25px;
 	margin-bottom: 50px;	
