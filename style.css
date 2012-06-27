@@ -113,7 +113,7 @@ a.LINK3:hover  {background:url(images/Banner7_22.gif);/* border:1px dashed black
 a.LINK4 {left:437px; top:135px; background:transparent;}
 a.LINK4 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
 a.LINK4:hover  {background:url(images/Banner7_29.gif);/* border:1px dashed black;*/ color:black;}
-a.LINK5 {left:654px; top:8px; background:transparent;}
+a.LINK5 {left:654px; top:8px; background:url(images/Banner8_5Yellow.gif);}
 a.LINK5 {display:block; width:194px; height:0; padding-top:28px; overflow:hidden; position:absolute;}
 a.LINK5:hover  {background:url(images/Banner8_5.gif);/* border:1px dashed black;*/ color:black;}
 a.LINK6 {left:654px; top:40px; background:transparent;}
